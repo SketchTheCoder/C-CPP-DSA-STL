@@ -1,0 +1,2 @@
+
+        smallest=a[i];

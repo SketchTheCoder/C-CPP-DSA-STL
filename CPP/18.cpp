@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+class student
+{
+protected:
+int roll_number;
+public:
+void get_numb(int a)
+{
+    roll_number=a;
+}
+void put_numb()
+{
+    cout<<"Roll no="<<roll_number<<endl;
+}
+};
+class test:public student
+{
+    protected:
+    double s1,s2;
+    public:
+    void get_marks(double x,double y)
+    {
+       s1=x;
+       s2=y;
+    }
+   void put_marks()
+   {
+    cout<<"Marks in sub1="<<s1<<endl;
+    cout<<"Marks in sub2="<<s2<<endl;
+   }
+};
+class result:public test
+{
+protected:
+double total;
+public:
+void display()
+{
+    total=s1+s2;
+    put_marks();
+    put_numb();
+    cout<<"Total= "<<total<<endl;
+}
+};
+int main()
+{
+    result stu1;
+    stu1.get_numb(123);
+    stu1.get_marks(24.3,56.8);
+    stu1.display();
+    return 0;
+}
