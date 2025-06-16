@@ -1,25 +1,24 @@
-//TO INSERT A ELEMENT IN A ARRY
 #include<iostream>
 using namespace std;
-int main() 
+class Base{
+public:
+virtual void display()
 {
-int a[10]={1,2,3,4,5,6,7,8,9},i,n,m,size=10;
-cout<<"Enter position where u want to insert elemet: ";
-cin>>m;
-
-cout<<"Enter number u want to insert:";
-cin>>n;
-
-for(i=size-1;i>=m;i--)
-{
-    a[i]=a[i-1];
+    cout<<"This is base class"<<endl;
 }
-a[m-1]=n;
-cout<<"array:\n";
-for(i=0;i<10;i++)
+};
+class Child:public Base{
+  public:
+void display()
 {
-    
-    cout<<a[i]<<endl;
+   cout<<"This is child class"<<endl; 
 }
+};
+int main()
+{
+    Base *b;
+    Child c;
+    b=&c;
+    b->display();//This is child class
 return 0;
 }

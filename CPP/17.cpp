@@ -23,8 +23,10 @@ cout<<"a="<<a<<endl<<"b="<<b<<endl;
 };
 int main()
 {
-    complex c1(3,4);
-    c1.showdata();
+   // complex c1(3,4);
+    // c1.showdata();
+    complex *p=new complex;
+    p->showdata();
     return 0;
 
 }

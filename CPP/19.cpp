@@ -11,10 +11,7 @@ void get_numb(int a)
 {
     roll_number=a;
 }
-void put_numb()
-{
-    cout<<"Roll no="<<roll_number<<endl;
-}
+void put_numb();
 };
 class test:public student
 {
@@ -59,6 +56,10 @@ void display()
     cout<<"Total= "<<total<<endl;
 }
 };
+void student::put_numb()
+{
+    cout<<"Roll no="<<roll_number<<endl;
+}
 int main()
 {
     result stu1;

@@ -2,6 +2,10 @@
     "files.associations": {
         "iostream": "cpp",
         "INSERTIONSORT.C": "cpp",
-        "MERGESORT.C": "cpp"
+        "MERGESORT.C": "cpp",
+        "array": "cpp",
+        "iosfwd": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
     }
 }

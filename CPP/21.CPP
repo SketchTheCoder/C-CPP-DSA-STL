@@ -17,6 +17,10 @@ int area(int l,int b)
 }
 int main()
 {
-    cout<<area(2.3);
+    cout<<area(2.3);//Circle
+    cout<<endl;
+    cout<<area(4);//Square
+    cout<<endl;
+    cout<<area(8,7);//Rectangle
     return 0;
 }

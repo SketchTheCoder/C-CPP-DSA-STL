@@ -12,7 +12,7 @@ complex(complex &c){a=c.a;b=c.b;}
 
 void set_a(int x)
 {a=x;} 
-void set_b(int x)
+void set_b(int x)u 
 {b=x;} 
 void showdata()
 {
