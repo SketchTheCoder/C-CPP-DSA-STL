@@ -19,6 +19,5 @@ int main()
     vector<int>::iterator it;
     for(it=v4.begin();it!=v4.end();it++)
     cout<<*it<<" ";
-
     return 0;
 }

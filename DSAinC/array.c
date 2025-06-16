@@ -3,7 +3,7 @@
 int main()
 {
 int size=10;    
-int a[]={1,2,3,4,5,6,7,8,9};
+int a[]={1,2,3,4,5,6,7,80,90};
 int x=4,y=20,i;
 for(i=size;i>=x;i--)
 {
